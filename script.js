@@ -1,6 +1,8 @@
 const body = document.querySelector('body');
 const html = document.querySelector('html');
-const color = document.querySelector('.color');
+const colorUX = document.querySelector('.color_ux');
+const colorGd = document.querySelector('.color_gd');
+const colorRet = document.querySelector('.color_ret');
 const job = document.querySelector('.jobs');
 const jobWrapper = document.querySelector('.work-container');
 const jobUx = document.querySelector('.work__ux');
@@ -9,10 +11,14 @@ const jobRet = document.querySelector('.work__ret');
 
 function seuUp() {
     color.style.backgroundImage = 'radial-gradient(closest-side, #00acb5b6, #222831)'
-    body.style.setProperty('backgroundColor', '#222831');
-    jobUx.style.display = 'initial';
-    jobGd.style.display = 'none';
-    jobRet.style.display = 'none';
+    // body.style.setProperty('backgroundColor', '#222831');
+    // jobUx.style.display = 'initial';
+    // jobGd.style.display = 'none';
+    // jobRet.style.display = 'none';
+    // jobUx.style.opacity = '1';
+    // jobGd.style.opacity = '0';
+    // jobRet.style.opacity = '0';
+    currentJob = 'Ux';
 }
 
 window.onload = function () {
@@ -27,9 +33,21 @@ job.addEventListener('click', e => {
         // jobWrapper.style.transform = 'translateX(0px)';
         // color.style.backgroundImage = 'radial-gradient(closest-side, var(--color-ux-1), var(--color-ux-2))'
         // body.style.backgroundColor = 'var(--color-ux-2)'
-        jobUx.style.display = 'initial';
-        jobGd.style.display = 'none';
-        jobRet.style.display = 'none';
+        // // jobUx.style.display = 'initial';
+        // // jobGd.style.display = 'none';
+        // // jobRet.style.display = 'none';
+        // jobUx.style.opacity = '1';
+        // jobGd.style.opacity = '0';
+        // jobRet.style.opacity = '0';
+        jobUx.classList.remove('work--gone-left');
+        jobUx.classList.remove('work--gone-right');
+        jobGd.classList.remove('work--gone-left');
+        jobGd.classList.add('work--gone-right');
+        jobRet.classList.remove('work--gone-left');
+        jobRet.classList.add('work--gone-right');
+        colorUX.classList.add('color_visible');
+        colorGd.classList.remove('color_visible');
+        colorRet.classList.remove('color_visible');
         currentJob = 'Ux';
     }
     if (clicked === 'Graphic Designer') {
@@ -37,18 +55,42 @@ job.addEventListener('click', e => {
         // jobWrapper.style.transform = 'translateX(-1025px)';
         // color.style.backgroundImage = 'radial-gradient(closest-side, var(--color-gd-1), var(--color-gd-2))'
         // body.style.backgroundColor = 'var(--color-gd-2)'
-        jobUx.style.display = 'none';
-        jobGd.style.display = 'initial';
-        jobRet.style.display = 'none';
+        // jobUx.style.display = 'none';
+        // jobGd.style.display = 'initial';
+        // jobRet.style.display = 'none';
+        // jobUx.style.opacity = '0';
+        // jobGd.style.opacity = '1';
+        // jobRet.style.opacity = '0';
+        jobUx.classList.add('work--gone-left');
+        jobUx.classList.remove('work--gone-right');
+        jobGd.classList.remove('work--gone-left');
+        jobGd.classList.remove('work--gone-right');
+        jobRet.classList.remove('work--gone-left');
+        jobRet.classList.add('work--gone-right');
+        colorUX.classList.remove('color_visible');
+        colorGd.classList.add('color_visible');
+        colorRet.classList.remove('color_visible');
         currentJob = 'Gd';
     }
     if (clicked === 'Retoucher') {
         // jobWrapper.style.transform = 'translateX(-2050px)';
-        jobUx.style.display = 'none';
         // color.style.backgroundImage = 'radial-gradient(closest-side, var(--color-ret-1), var(--color-ret-2))'
         // body.style.backgroundColor = 'var(--color-ret-2)'
-        jobGd.style.display = 'none';
-        jobRet.style.display = 'initial';
+        // jobUx.style.display = 'none';
+        // jobGd.style.display = 'none';
+        // jobRet.style.display = 'initial';
+        // jobUx.style.opacity = '0';
+        // jobGd.style.opacity = '0';
+        // jobRet.style.opacity = '1';
+        jobUx.classList.add('work--gone-left');
+        jobUx.classList.remove('work--gone-right');
+        jobGd.classList.add('work--gone-left');
+        jobGd.classList.remove('work--gone-right');
+        jobRet.classList.remove('work--gone-left');
+        jobRet.classList.remove('work--gone-right');
+        colorUX.classList.remove('color_visible');
+        colorGd.classList.remove('color_visible');
+        colorRet.classList.add('color_visible');
         currentJob = 'Ret';
     }
 })
