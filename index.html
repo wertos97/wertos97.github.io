@@ -8,7 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 
@@ -19,10 +19,10 @@
 
 <body class="body-color_ux">
 
-    <div class="color-container">
-        <div class="color color_ux color_visible"></div>
-        <div class="color color_gd"></div>
-        <div class="color color_ret"></div>
+    <div class="color">
+        <div class="color_ux color_visible"></div>
+        <div class="color_gd"></div>
+        <div class="color_ret"></div>
     </div>
 
     <!-- HEADER -->
@@ -38,12 +38,12 @@
 
         <section class="intro">
             <h1 class="first-heading">Hello <span class="emoji">👋</span></h1>
-            <p class="text"><span class="u-bold">I'm <span class="u-accent">Mateusz</span></span>, and I am a...</span>
-            <div class="jobs">
-                <div class="btn--job btn--job__uiux">UI/UX Designer</div>
+            <p class="text"><span class="u-bold">I'm <span class="u-accent">Mateusz</span></span>, and I am a...</span></p>
+            <p class="text--jobs"><span class="job job--ux">UI/UX Designer</span>, <span class="job job--gd">Graphic Designer</span> and <span class="job job--ret">Retoucher</span>
+                <!-- <div class="btn--job btn--job__uiux">UI/UX Designer</div>
                 <div class="btn--job btn--job__gd">Graphic Designer</div>
-                <div class="btn--job btn--job__ret">Retoucher</div>
-            </div>
+                <div class="btn--job btn--job__ret">Retoucher</div> -->
+            </div></p>
             <span class="text--second">based in Kraków, Poland.</span>
         </section>
 
@@ -56,7 +56,7 @@
                 </div>
 
                 <section class="grid grid__ux">
-                    <div class="project">
+                    <a class="project" href="/UX-PetMe.html">
                         <section class="project-info">
                             <h3 class="third-heading">PetMe</h3>
                             <p class="description">The modern pet owner's mobile application.</p>
@@ -68,7 +68,7 @@
                         </section>
                         <img src="img/petme_1.png" alt="Project" class="grid-img">
                         <div class="gradient"></div>
-                    </div>
+                    </a>
                     <div class="project">
                         <section class="project-info">
                             <h3 class="third-heading">Kadax.pl</h3>
@@ -107,7 +107,7 @@
                     </div>
                     <div class="project">
                         <section class="project-info">
-                            <h3 class="third-heading">Video</h3>
+                            <h3 class="third-heading">Photo/Video</h3>
                             <p class="description">To see, to hear and to feel.</p>
                             <ul class="technologies">
                                 <li class="technology">Premiere Pro</li>
@@ -115,7 +115,7 @@
                                 <li class="technology">After Effects</li>
                             </ul>
                         </section>
-                        <img src="img/kadax.png" alt="Project" class="grid-img">
+                        <img src="img/thumbnail__gd__video.jpg" alt="Project" class="grid-img">
                         <div class="gradient"></div>
                     </div>
                 </section>
