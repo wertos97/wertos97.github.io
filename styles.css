@@ -251,12 +251,14 @@ body::-webkit-scrollbar {
 
 .color-big {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  bottom: 0;
+  min-height: 100%;
+  min-width: 100%;
+  display: flex;
+  /* position: sticky; */
+  top: 100%;
   background: linear-gradient(to top, #00acb5b6, transparent);
   z-index: -1;
-  background-size: cover;
+  /* background-size: cover; */
   overflow: hidden;
 }
 
@@ -649,6 +651,10 @@ body::-webkit-scrollbar {
   max-width: 950px;
   opacity: 0.94;
   margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .article li {
@@ -671,11 +677,10 @@ body::-webkit-scrollbar {
 
 .article-header-image {
   margin: 0 auto;
-  margin-top: 60px;
   max-width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 5px 5px 0px 0px;
+  /* border-radius: 5px 5px 0px 0px; */
   overflow: hidden;
 }
 
@@ -712,8 +717,7 @@ body::-webkit-scrollbar {
   font-weight: 600;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.25);
-  border-radius: 0px 0px 5px 5px;
-  margin-bottom: 60px;
+  /* border-radius: 0px 0px 5px 5px; */
   transition: all .3s;
 }
 
@@ -755,6 +759,14 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
+.section-wrapper-3-2 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 25px;
+  position: relative;
+}
+
 .section-wrapper--color {
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 5px;
@@ -766,7 +778,6 @@ body::-webkit-scrollbar {
   gap: 10px;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-top: 10px;
 }
 
 .role {
@@ -819,6 +830,15 @@ body::-webkit-scrollbar {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+}
+
+.embed-content {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 15px;
 }
 
 
