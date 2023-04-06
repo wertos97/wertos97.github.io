@@ -22,7 +22,13 @@
     <div class="color_ux color_visible"></div>
 </div>
 
-<body class="body-color_ux">
+<body class="body-color_ux color-big_ux">
+    <header class="header u-no-animation">
+        <a href="index.html">
+            <img src="img/avatar.jpg" alt="Portrait" class="logo u-no-animation">
+        </a>
+        <!-- <a href="mailto:kontakt@mateuszwilk.xyz" class="btn btn--contact">Contact me</a> -->
+    </header>
     <main class="article">
         <img src="img/petme/header.png" alt="PetMe Case Study Header" class="article-header-image">
         <section class="article-section">
@@ -53,7 +59,9 @@
                 <div class="flex-column-1 section-wrapper--color">
                     <div class="flex-column-2">
                         <p class="article-desc-header-small">My role</p>
-                        <div class="article-content"><span class="u-bold">Product Designer</span></div>
+                        <div class="article-content">
+                            <span class="u-bold">Product Designer</span>
+                        </div>
                         <div class="roles">
                             <div class="role">User research & Analysis</div>
                             <div class="role">Persona creation</div>
@@ -287,62 +295,61 @@
                     and the basic UI principles.</p>
             </div>
         </section>
-        <div class="-image">
-            <img src="img/petme/hifi_wireframe.png" alt="PetMe Lo-Fi Wireframe" class="article-image">
-            <section class="article-section">
-                <p class="article-section-title">Testing</p>
+        <img src="img/petme/hifi_wireframe.png" alt="PetMe Lo-Fi Wireframe" class="article-image">
+        <section class="article-section">
+            <p class="article-section-title">Testing</p>
+            <p class="article-content">
+                Using the finished prototype, we conducted usability tests of our app with 10 people. We mainly
+                wanted
+                to test users' first contact with the app, task creation and assignment, the concept of the pet
+                health
+                e-book, and activity measurement and summaries. The tests helped us to identify 2 critical bugs
+                (preventing task completion), 4 major bugs (significantly hindering goal achievement) and 4 minor
+                bugs
+                (whose removal improved the user experience) in our prototype.</p>
+            <div class="section-breaker--small"></div>
+            <div class="flex-column-2">
+                <p class="article-desc-header-small">Critical errors and their solutions</p>
                 <p class="article-content">
-                    Using the finished prototype, we conducted usability tests of our app with 10 people. We mainly
-                    wanted
-                    to test users' first contact with the app, task creation and assignment, the concept of the pet
-                    health
-                    e-book, and activity measurement and summaries. The tests helped us to identify 2 critical bugs
-                    (preventing task completion), 4 major bugs (significantly hindering goal achievement) and 4 minor
-                    bugs
-                    (whose removal improved the user experience) in our prototype.</p>
-                <div class="section-breaker--small"></div>
-                <div class="flex-column-2">
-                    <p class="article-desc-header-small">Critical errors and their solutions</p>
-                    <p class="article-content">
-                        The first critical bug was the behaviour of the drop-down list, which did not hide after
-                        scrolling,
-                        thus
-                        obscuring another checkbox. As a result, users would unknowingly skip entering this data. We
-                        corrected
-                        this by automatically collapsing the list when moving to the next field.
-                    </p>
-                    <p class="article-content">
-                        The second critical bug was the unclear marking of tasks as completed - users' success was based
-                        on
-                        searching rather than deliberate action. We solved this by describing the checkbox and including
-                        this
-                        functionality in the onboarding. As suggested by users, we also added the ability to undo task
-                        completion.</p>
-                </div>
-            </section>
-            <img src="img/petme/screens.png" alt="PetMe Screens" class="article-image">
-            <section class="article-section">
-                <p class="article-section-title">Conclusion</p>
+                    The first critical bug was the behaviour of the drop-down list, which did not hide after
+                    scrolling,
+                    thus
+                    obscuring another checkbox. As a result, users would unknowingly skip entering this data. We
+                    corrected
+                    this by automatically collapsing the list when moving to the next field.
+                </p>
                 <p class="article-content">
-                    During the testing phase the app has received a lot of positive feedback. Users were describing the
-                    app
-                    as
-                    clean and easy to learn. Each of them found their way through the app without stutters or doubts and
-                    they were finding
-                    proposed solutions and functionalities useful and interesting.</p>
-            </section>
-            <section class="article-section">
-                <div class="flex-buttons">
-                    <a href="https://www.behance.net/gallery/148334081/UX-Case-Study-Petme" class="btn">Extended Case
-                        Study</a>
-                    <a href="https://bfvll5.axshare.com" class="btn">App Prototype</a>
-                </div>
-            </section>
-            <img src="img/petme/footer.png" alt="PetMe Case Study Footer" class="article-footer-image">
-            <a href="index.html">
-                <section class="article-end">
-                    < Back </section>
-            </a>
+                    The second critical bug was the unclear marking of tasks as completed - users' success was based
+                    on
+                    searching rather than deliberate action. We solved this by describing the checkbox and including
+                    this
+                    functionality in the onboarding. As suggested by users, we also added the ability to undo task
+                    completion.</p>
+            </div>
+        </section>
+        <img src="img/petme/screens.png" alt="PetMe Screens" class="article-image">
+        <section class="article-section">
+            <p class="article-section-title">Conclusion</p>
+            <p class="article-content">
+                During the testing phase the app has received a lot of positive feedback. Users were describing the
+                app
+                as
+                clean and easy to learn. Each of them found their way through the app without stutters or doubts and
+                they were finding
+                proposed solutions and functionalities useful and interesting.</p>
+        </section>
+        <section class="article-section">
+            <div class="flex-buttons">
+                <a href="https://www.behance.net/gallery/148334081/UX-Case-Study-Petme" class="btn">Extended Case
+                    Study</a>
+                <a href="https://bfvll5.axshare.com" class="btn">App Prototype</a>
+            </div>
+        </section>
+        <img src="img/petme/footer.png" alt="PetMe Case Study Footer" class="article-footer-image">
+        <a href="index.html">
+            <section class="article-end">
+                < Back </section>
+        </a>
     </main>
     <!-- <div class="color-big"></div> -->
 </body>
