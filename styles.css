@@ -161,7 +161,7 @@ html {
   --color-gd: hsl(128, 83%, 37%);
   --color-gd-1: #00b518b6;
   --color-gd-2: hsl(136, 18%, 16%);
-  --color-ret: #b5a900;
+  --color-ret: hsl(56, 100%, 35%);
   --color-ret-1: #b5a900b6;
   --color-ret-2: #313122;
 }
@@ -258,7 +258,7 @@ body::-webkit-scrollbar {
 }
 
 .color-big_ret {
-  background: linear-gradient(to top, var(--color-ret), var(--color-ret-2));
+  background: linear-gradient(to top, hsl(56, 100%, 16%), var(--color-ret-2));
 }
 
 /* HEADER */
@@ -824,20 +824,24 @@ body::-webkit-scrollbar {
   flex-wrap: wrap;
 }
 
-.article-gallery .gallery-image {
-  height: auto;
-  flex-grow: 1;
+.gallery-image {
+  /* height: auto; */
+  flex-grow: 9;
   flex-shrink: 1;
   list-style: none;
   overflow: hidden;
   margin: 12px;
   flex-basis: 25%;
-  align-items: stretch;
+}
+
+.portrait {
+  flex-grow: 0;
+  flex-shrink: 1;
 }
 
 .article-gallery img {
   max-height: 100%;
-  width: 100%;
+  max-width: 100%;
   object-fit: cover;
   border-radius: 5px;
 }
