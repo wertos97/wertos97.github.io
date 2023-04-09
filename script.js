@@ -84,16 +84,31 @@ function viewRet() {
 //     setUp();
 // }
 
-job.addEventListener('click', e => {
-    const clicked = e.target.textContent;
+if (job) {
+    job.addEventListener('click', e => {
+        const clicked = e.target.textContent;
 
-    if (clicked === 'UI/UX Designer') {
-        viewUx();
-    }
-    if (clicked === 'Graphic Designer') {
-        viewGd();
-    }
-    if (clicked === 'Retoucher') {
-        viewRet();
+        if (clicked === 'UI/UX Designer') {
+            viewUx();
+        }
+        if (clicked === 'Graphic Designer') {
+            viewGd();
+        }
+        if (clicked === 'Retoucher') {
+            viewRet();
+        }
+    })
+}
+
+
+
+document.querySelectorAll(".article-gallery img").forEach(img => {
+    img.onclick = () => {
+        document.querySelector(".gallery-viewer").style.display = "block";
+        document.querySelector(".gallery-viewer img").src = img.getAttribute("src");
     }
 })
+
+document.querySelector(".gallery-viewer span").onclick = () => {
+    document.querySelector(".gallery-viewer").style.display = "none";
+}
