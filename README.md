@@ -1,6 +1,6 @@
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fmateuszwilk.xyz)](https://mateuszwilk.xyz)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://makeapullrequest.com)
-[![GitHub](https://img.shields.io/github/license/wertos97/wertos97.github.io)]()
+[![GitHub](https://img.shields.io/github/license/wertos97/wertos97.github.io)](https://github.com/wertos97/wertos97.github.io/blob/master/LICENSE)
 
 
 ## Personal Website
