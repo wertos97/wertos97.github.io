@@ -30,8 +30,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Pages](https://pages.github.com)
 * [Best README Template](https://github.com/othneildrew/Best-README-Template)
