@@ -18,7 +18,7 @@ My personal website built with HTML, CSS and vanilla JS.
     - [ ] Product Retouching
 - [ ] Portrait retouching before/after view
 - [ ] Main page grid rework
-    - [ ] More intuitive work sections
+    - [x] More intuitive work sections
     - [ ] Simplified animations
 - [ ] Multi-language
     - [x] English
