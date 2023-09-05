@@ -493,7 +493,6 @@ body::-webkit-scrollbar {
 }
 
 .job {
-  /* cursor: pointer; */
   transition: all 0.3s;
   font-weight: 500;
   text-decoration: underline;
@@ -501,40 +500,21 @@ body::-webkit-scrollbar {
   transition: all .2s;
 }
 
-/* .job:hover {
-  text-decoration-thickness: 30%;
-} */
-
 .job--ux {
   text-decoration-color: var(--color-ux);
 }
-
-/* .job--ux:hover {
-  color: var(--color-ux);
-} */
 
 .job--gd {
   text-decoration-color: var(--color-gd);
 }
 
-/* .job--gd:hover {
-  color: var(--color-gd);
-} */
-
 .job--ret {
   text-decoration-color: var(--color-ret);
 }
 
-/* .job--ret:hover {
-  color: var(--color-ret);
-} */
-
 /* WORK */
 
 .work-container {
-  /* display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr; */
   position: relative;
   animation: fade-up 2s 1s backwards;
 }
@@ -544,25 +524,20 @@ body::-webkit-scrollbar {
 }
 
 .work__ux {
-  /* position: absolute; */
   grid-column: 1/2;
   grid-row: 1/2;
   transition: all 1s;
 }
 
 .work__gd {
-  /* position: absolute; */
   grid-column: 1/2;
   grid-row: 1/2;
-  /* opacity: 0; */
   transition: all 1s;
 }
 
 .work__ret {
-  /* position: absolute; */
   grid-column: 1/2;
   grid-row: 1/2;
-  /* opacity: 0; */
   transition: all 1s;
 }
 
@@ -609,15 +584,6 @@ body::-webkit-scrollbar {
   position: relative;
   transition: all 1s;
 }
-
-/* .project:hover {
-  border-radius: 5px;
-  overflow: hidden;
-  position: relative;
-  width: 950px;
-  height: 100vh;
-  transition: all 1s;
-} */
 
 .project:nth-child(1) {
   grid-column: 1/2;
